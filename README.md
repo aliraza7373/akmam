@@ -1,16 +1,22 @@
-# React + Vite
+# A note for Akmam
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Run locally
 
-Currently, two official plugins are available:
+Open a terminal in this folder. In Windows PowerShell, install the dependencies and start the Vite server with:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+```sh
+npm.cmd install
+npm.cmd start
+```
 
-## React Compiler
+The start command opens the app in your default browser at the local Vite URL. If Chrome is not your default browser, copy the URL printed in the terminal into Chrome. Keep the terminal running while you use the app.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Do not open `index.html` directly from File Explorer. This is a React app, so it needs to be served over HTTP for its JavaScript modules to load.
 
-## Expanding the ESLint configuration
+## Build for hosting
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```sh
+npm run build
+```
+
+The production files are written to `dist/`.

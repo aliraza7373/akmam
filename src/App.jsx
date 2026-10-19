@@ -135,29 +135,15 @@ function App() {
             <div className="handwritten-note"><span className="note-scribble">made just for you</span><HeartIcon /></div>
           </div>
 
-          <div className="hero-art">
+          <div className="hero-art waiting-art">
             <div className="art-sun" />
             <Sparkle className="sparkle sparkle-one" />
             <Sparkle className="sparkle sparkle-two" />
-            <span className="art-caption" aria-hidden="true">a little note<br />for someone lovely</span>
-            <div className="envelope-shadow" />
-            <div className="envelope">
-              <div className="envelope-paper">
-                <span className="paper-to">dear AK,</span>
-                <span className="paper-lines" />
-                <span className="paper-lines short" />
-                <HeartIcon className="paper-heart" />
-              </div>
-              <div className="envelope-front" />
-              <div className="envelope-flap" />
-              <button className="seal" type="button" onClick={() => setApologyOpen(true)} aria-label="Open a little apology note" title="Open a little apology note">
-                <HeartIcon />
-              </button>
-            </div>
-            <div className="rose-stem"><span className="rose-leaf leaf-one" /><span className="rose-leaf leaf-two" /><span className="rose-bloom"><i /><i /><i /><i /><i /></span></div>
-            <span className="art-date" aria-hidden="true">with all my<br />honesty ♡</span>
+            <figure className="waiting-card">
+              <img src="/waiting-box.svg" alt="A sad cardboard box waiting, with an Urdu caption: sometimes patiently, sometimes impatiently." />
+            </figure>
             <button className="art-apology-button" type="button" onClick={() => setApologyOpen(true)}>
-              Akmam, click here <HeartIcon />
+              Akmam, open this note <HeartIcon />
             </button>
           </div>
           <a className="scroll-cue" href="#letter"><span /> keep going</a>
@@ -224,7 +210,7 @@ function App() {
             <span className="apology-kicker">a note from my heart</span>
             <HeartIcon className="apology-heart" />
             <h2 id="apology-title">I’m truly sorry, AK.</h2>
-            <p>Akmam, I’m truly sorry for how I behaved last time. I’ve thought about my actions, and I know I could have treated you with more care. You deserved patience and respect from me, and I truly regret it.</p>
+            <p>Akmam, I’m truly sorry for how I behaved last time. I sent you your pictures and said things I didn’t realize would upset you. I was trying to share what was in my heart, but I understand that I hurt you. I feel truly ashamed, and I regret it.</p>
             <p>I’ll try to do better. You don’t have to reply before you’re ready—I just wanted you to know that I’m sorry.</p>
             <div className="apology-signoff">With sincerity <span>♡</span></div>
             <button className="button button-primary apology-done" type="button" onClick={() => setApologyOpen(false)}>Close this note</button>
@@ -242,4 +228,4 @@ function App() {
   )
 }
 
-export default App
+export default App;

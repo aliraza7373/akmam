@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 708 522" role="img" aria-labelledby="title desc">
+  <title id="title">A little box waiting for you</title>
+  <desc id="desc">A sad cardboard box stands in a quiet, rainy place. Urdu text says it is waiting, sometimes patiently and sometimes impatiently.</desc>
+  <defs>
+    <linearGradient id="sky" x2="0" y2="1">
+      <stop stop-color="#73877b" />
+      <stop offset=".48" stop-color="#626d68" />
+      <stop offset="1" stop-color="#29312f" />
+    </linearGradient>
+    <linearGradient id="ground" x2="0" y2="1">
+      <stop stop-color="#353b39" />
+      <stop offset="1" stop-color="#101817" />
+    </linearGradient>
+    <linearGradient id="boxFront" x2="1" y2="1">
+      <stop stop-color="#e4bf74" />
+      <stop offset=".58" stop-color="#c9994c" />
+      <stop offset="1" stop-color="#a97635" />
+    </linearGradient>
+    <linearGradient id="boxSide" x2="1" y2=".8">
+      <stop stop-color="#c28d3d" />
+      <stop offset="1" stop-color="#96652f" />
+    </linearGradient>
+    <linearGradient id="boxTop" x2=".8" y2="1">
+      <stop stop-color="#f3d58d" />
+      <stop offset="1" stop-color="#d7ae65" />
+    </linearGradient>
+    <linearGradient id="captionShade" x2="0" y2="1">
+      <stop stop-color="#0b1111" stop-opacity="0" />
+      <stop offset=".4" stop-color="#080d0e" stop-opacity=".46" />
+      <stop offset="1" stop-color="#050809" stop-opacity=".87" />
+    </linearGradient>
+    <filter id="blur"><feGaussianBlur stdDeviation="17" /></filter>
+    <filter id="shadow"><feGaussianBlur stdDeviation="13" /></filter>
+    <filter id="textShadow" x="-.2" y="-.3" width="1.4" height="1.7">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="2" result="blur" />
+      <feOffset dy="2" result="offset" />
+      <feComponentTransfer><feFuncA type="linear" slope=".8" /></feComponentTransfer>
+      <feMerge><feMergeNode /><feMergeNode in="SourceGraphic" /></feMerge>
+    </filter>
+  </defs>
+
+  <rect width="708" height="522" fill="url(#sky)" />
+  <g filter="url(#blur)" opacity=".8">
+    <ellipse cx="111" cy="73" rx="123" ry="66" fill="#9ca99a" />
+    <ellipse cx="589" cy="97" rx="122" ry="69" fill="#45544c" />
+    <ellipse cx="55" cy="227" rx="120" ry="38" fill="#293535" />
+    <ellipse cx="620" cy="260" rx="135" ry="53" fill="#202a29" />
+    <ellipse cx="315" cy="180" rx="260" ry="25" fill="#b1aaa0" opacity=".4" />
+  </g>
+  <rect y="301" width="708" height="221" fill="url(#ground)" />
+  <ellipse cx="497" cy="435" rx="153" ry="28" fill="#070a09" opacity=".52" filter="url(#shadow)" />
+
+  <!-- Little cardboard figure -->
+  <path d="m415 208 111-8 47 28-117 18z" fill="#c49042" />
+  <path d="m456 246 117-18-7 159-111 25z" fill="url(#boxSide)" />
+  <path d="m415 208 111-8-9 177-101 13z" fill="url(#boxFront)" />
+  <path d="m432 409 42-5-7 74-45 8z" fill="#9a7037" />
+  <path d="m520 397 42-8 15 65-39 17z" fill="#8f6735" />
+
+  <!-- Box head: top, front, and right side -->
+  <path d="m334 54 151-48 175 20-137 68z" fill="url(#boxTop)" />
+  <path d="m523 94 137-68 8 173-132 64z" fill="url(#boxSide)" />
+  <path d="m334 54 189 40 13 169-190-43z" fill="url(#boxFront)" />
+  <path d="m334 54 151-48 175 20-137 68z" fill="none" stroke="#f6dda3" stroke-opacity=".5" stroke-width="3" />
+  <path d="m523 94 137-68m-137 68 13 169" fill="none" stroke="#77522b" stroke-opacity=".5" stroke-width="3" />
+  <path d="m393 125q9-12 19 1l-1 14q-10 8-18-2z" fill="#29231c" />
+  <path d="m471 141q10-12 20 1l1 14q-10 8-19-2z" fill="#29231c" />
+  <path d="m436 179 21 8-19 10z" fill="#35291e" />
+  <path d="m374 77 8 2m-4-6 1 12" stroke="#fff0c5" stroke-opacity=".4" stroke-width="2" />
+
+  <!-- Soft rain and reflected light -->
+  <g stroke="#d5ddd2" stroke-opacity=".22" stroke-width="2">
+    <path d="m76 245-11 37m77-66-9 31m489-2-12 42m-72-18-8 27m-426 37-8 27m535-9-8 29" />
+  </g>
+  <path d="M0 282c106-18 176 17 274 0s191-21 434 3v237H0z" fill="url(#captionShade)" />
+  <g fill="#fffaf4" text-anchor="middle" direction="rtl" unicode-bidi="plaintext" font-family="Noto Nastaliq Urdu, Noto Naskh Arabic, Urdu Typesetting, serif" filter="url(#textShadow)">
+    <text x="350" y="355" font-size="43">بس انتظار ہے تمہارا</text>
+    <text x="350" y="423" font-size="39">کبھی صبر سے کبھی بے صبری سے</text>
+  </g>
+  <rect x="1.5" y="1.5" width="705" height="519" rx="22" fill="none" stroke="#fff8ef" stroke-opacity=".45" stroke-width="3" />
+</svg>
